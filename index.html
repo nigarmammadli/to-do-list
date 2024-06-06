@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-green-200 via-blue-200 to-purple-200 flex items-center justify-center min-h-screen">
+
+    <div class="w-[390px] mx-auto border p-4 bg-white shadow-lg rounded-lg">
+        <form id="taskForm" class="border flex rounded-md overflow-hidden">
+            <input type="text" id="taskInput" class="flex-1 outline-none px-1 py-2" placeholder="Enter a task...">
+            <button id="btnSave" class="bg-green-500 text-white py-2 px-4 hover:bg-green-600">Save</button>
+        </form>
+
+        <div class="flex items-center justify-between mt-[15px]">
+            <div class="w-[124px] h-[30px] bg-gray-500 border rounded-lg">
+                <button id="btnAll" class="text-white  px-[40px]">All</button>
+            </div>
+            <div class="w-[124px] h-[30px] border rounded-lg">
+                <button id="btnCompleted" class="text-gray-500 px-[18px]">Complated</button>
+            </div>
+            <div class="w-[124px] h-[30px] border rounded-lg">
+                <button id="btnPending" class="text-gray-500 px-[18px]">Pending</button>
+            </div>
+        </div>
+
+        <ul class="space-y-3  mt-3" id="taskList">
+         
+        </ul>
+    </div>
+
+    <script src="./script.js"></script>
+
+    
+   
+    
+</body>
+</html>
